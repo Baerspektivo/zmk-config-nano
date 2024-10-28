@@ -19,17 +19,6 @@
 // 4x5
 
 / {
-    behaviors {
-        window_swap: window_swap {
-            compatible = "zmk,behavior-mod-morph";
-            label = "WINDOW_SWAP";
-            bindings = <&kp LEFT>, <&kp RIGHT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -43,7 +32,7 @@
 &kp LCTRL  &kp BACKSPACE                                                                                 &kp ESC  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         lower_layer {
