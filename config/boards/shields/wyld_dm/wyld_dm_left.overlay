@@ -19,7 +19,7 @@
 
 
 &left_encoder {
-	status = "disabled";
+	status = "okay";
 };
 
 &nice_view_spi {
